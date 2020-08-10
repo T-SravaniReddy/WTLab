@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #1abc9c;;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.button:hover, a:hover {
+  opacity: 0.7;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center">USER PROFILE</h2>
+
+<div class="card">
+  <img width=5 height=300 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAPFBMVEX///+ZmZmWlpaTk5OdnZ38/PygoKD29vbx8fHr6+vd3d35+fnT09OpqanLy8ukpKS+vr60tLTl5eWMjIxRqHi7AAAKEUlEQVR4nO1di3LrKAwNL9uxY+Ok//+viyB9bWMHHR5Oezk7nc3ktsYHCUkIEKdTQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDw++DMdM0GXP0a+SG6W/jsl7nTgsppXI/QnfzdV3GW//ryZrbZZ2FUp7WdxBZpcS8Xm6/lWY/rtZzE3vwPO069ke/LhfnZXb6uMvtG08l5+V89EvH47aKZ6J7RFKJ9Xb0q8dgWDWf3gdLvQ5HE9iHGWeGbj4mOY+va3n6RagkegFKLK9pd4YV1s4fHNULKivxy0PPQ74axz4vvzvH19FVs2TnFzgu5vQSVmfUOezLQ456PJqcw5DqH3Ypqvnw4VhGQb9yXA5kZ0iARfkRlB2OG42XwgIMkPJyED9zLS/AAHU9RIhnXUOAAVIfMLW61BJggKqrqU5n1roEHcW1KsVTBRv6g+JccTD2tt4Q/IS01QLVQR/AjyjqSgHOWRwhQU9RVDGp56P4EUVZgeKRBIljcYoHEywvxeFYfh4FzY059d3BIiTovuBcI80PhsWYR8s0vMfYYvxOc8KbSVpnWi7jOF4WWo9KedRciiAei0pll/NX1TLnxeIkS8Wo8GxCyvWRATyvsLaWmWmcQYI7iU88zaoK+AwDBqP72TI40aPzm9Mr1ttP9QnUfXnNTRB7kZhQGQzk8w5Fcxqgt4ib0U2Yl5V5k4yQJ5R2ino4RjGvV1wgHe1i+9h0yONzZsMHbBDGh8hYQK/yxeCQjirOutGI9GE+PcWa50VWa/FO3AHm65kuGQwo8ljTpUr3QoqSx9j0kLfiz+Es0oxMT6GaaiOkxmh/CMxTaKAlaCRm8BiQCCUyPqDxni5ETITQ9A2bgCYLERIhpKQGU9NUIfZYvIa1ivWmSjOn0NhA527gHDTNJ4KzUyyLgg1EKVIIQj4KVhxsSKRFpzPUpJBYuGjAxFvCFGN4w5pE9QZsLcFhYHYGcxYEMGGZ4DDQ9frKDOH2Tjd4nQJsEG1Ooec0MA8sqlsaXE3hPRd1vQXuEtGlmMoeP6FB1JJWjtoIYOSGr/hWjbx9g5DTx/IzAZj5TthMBuVrwJjUo+IM+N4gEpviOgOqafUGoezeB07MpS+D+3sPYAeKSdojWyub+NkgP8hIGRUOHbtBaIXtkyF/5CfuVGe7xNrtpY17j7j133dMia0BpiZlh5dvkrdZAtzq8dkc3+enNShqrJB+B5cgHOd/oRg/+DPsy2XPZ/DZ7wekiG20T24LmAVnUBshuwhr4/xYn+MEFdsD41OnL3h+QKLv++mc5fgGewKV7Czu7e7qjulN3482ywkjtrtItd7v2F1p781gLkKnRTN3sLfygdnun1B226T25ja/WZHqej3YDpE9s9jc77tTHuHsxoIVXZ5zYtxImD369XafSHV9NBxvVzUrLWyX54gDN6/AbqCTO50ilfheKKkfQ5We2c7WSz8DSR5BdnJWBoZBVz//+P2TP2rRXdflcrks67WTMhRikJ9/8KnmGFtmGprHUHadDgxpTEnd2c6/qO1seN3Ofei6ToX6XlprKmjmvpTSdvQHtnPfdcHxO62FODIZTiwfRSIJDJWjZEkyZD2sctrpeSuSmVTBpLhPVtJXsqPekKLz8rv/LtUH00gMoJjTNQZDaZXVpKXuxcncaNHNkl5ckRHpiJJ1RGzwe5I+ORFaTTyIofvGiVhYSz3l/sjuDukjGKrOy8kxJO1zxBwv9/b+a6LsSGr61vVER7/tdZBk5/6TnVdYSX1En+kRnYLcB5MhZxy6UagCw0DVMSTxqI+vNRXxehNv2rHTmsaoUlK8kTLeO4UYCvpz9ywnXmxnezlLQ3rnBBFekZRUh+qI9DWNN2XndRnH89QPU6gNeTLD+RYOeAntuyGw015jw6hkWxvukh7n2Y6XE4W9M3TKqO+21b3mdR2HfjKnfuhPk/vkJhNUDtL0E8EM4zI71fxgGJ5FQuSfieIRZMU0zlz4t5LW65c3N05Z1byORIOmSOFnmIihHy+eqiNNAr0trlNsGJM0goUNUuSBG9Nw49LguOX7Z6m6ZaD3n5zEHAuaKNGPuRP0FI3/38k4EQ9Ldz/kdSfH11JuXJo0t9gIRPfhwtSU0I09t0iYH0oJ1lpLqvnGnh/ic3x/3BDZqmD8gUSYIXeOj+Zp9ia8MTijk0V2ngbLteWozAUWn2Ln2qB8qbQ5TiINWNDGtW1IztsXrEo9xWLAElv8PTxAG/lOyyGnAdmNcBNgUl0ynulkD0Zg7YnrLjIfkecumALrh8wmspc3ZCoq0ME8Y1qgjgPP+QPr+Ky9GEVqcbAsAbLhkzW7mPKXODCspX2kogvD1OQ6rfo/MOIqaE9U/PNzHAJ8iPhOhvo4fm+i5GW54jHFvwK0Kzl2pBesgxvrMkBLF/l4CZ8FiEDkCj/YyZE724pWFo2MO9CCPFHJIJnpTPxjmMh3AB8fZcoSj/89Q1SuATbmUYFbxvIbjxB1Dhk+MxOTFi5XO+2OmLQmbusiVKR4BeMIW5MQcUSoSIayDfuICDxSBspTFSmupDGBR8o7PI1NC1tSwtOhkhb3P+s+3IpF45lFTzvL/bQDgUMAXDybiieq0bO0acFSoh94smUqsabCk7im2Myw4ivsO4wqF4jsj5T0mGq3BwulL75j16Bn0KJdIZYoI/oDu7O4dBHu14lKHeVR2ItqshiCXXNa40IGsyfCLF28M9JLJjA+sT3FyWTpdsrh1XCHu7npTDq0acwqxN2Ezdg7nynfauJghhmb3/IYBzPMmUDZSJ3mL8j8EBu7l/IGVBvdWEeGjxlmVaDNWtBVbOlGleHMtaA3EkJeTYtmhE+n6bH+5E+BbaiKLpxrM8vjrHcBE7Dl95V4ePFBnjZvm9cnFKirvx3i04Xal3PuFo2/vHyzzSK9upObleGm+3HIwXMaxoUunt/Z6V0qD72//8Of+JF6vq7LeDsPvL0LxkzD+eaYXa1Qu+Q8wWLJk5hV4ffrcpTQdnZ0HRY6z0U3zHwFfbUs7l+v13mm0xbqObP3Jgq6Yea+SPkO9Rgf/857ajkv/C/c9/TX7+wi/Pl71w6n+NevB6xy/+E/cIflP3AP6T9wl6zzjIfcB1yPH+GQO53r3j/+t+/l9vjzd6uDh3cg+ONGhwA8ZsaElAdoaIDBry9kQNnMaUMmlsJizHGiMRFOjOU4yv0bMGth1KVUVeoaOyEiYMqoqlNQc+gI/Ar8UtgdfptX0B6DpLP0D/m9wgD8jnwc5UvyI/SryGFzlFheSz+/woypvsP5h/FVrMsGhlVHpq5/spNKv6h6/g+3UG2OTU+s5XccZ4NfGosn6X53Xg6ZIKWgH2mJ7Jkw/ZqG/V5y8DfB3C7rTLXofq6+hPUaWnW8vbhleQ4zUF2v60zFruSdrA3LjP2vJ/d/+Fpm5s/RamhoaGhoaGhoaGhoaGhoaGho+CfwH+zEfAv6fteiAAAAAElFTkSuQmCC" alt="John" style="width:100%">
+  <h1>John Doe</h1>
+  
+  <p>GENDER:M</p>
+  <p>DATE OF BIRTH: 11-05-1999</p>
+  <p>MOBILE NUMBER: 987654326</p>
+  <p>EMAILID:john@gmail.com</p>
+  <p>ADDRESS:Hyderabad</p>
+  <p>PASSWORD:join123</p>
+  
+ 
+  <p><a style="text-decoration:none" class="button" href="updateprofile.html">Update</a></p>
+</div>
+
+</body>
+</html>
