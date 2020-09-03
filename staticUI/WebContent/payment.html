@@ -2,7 +2,78 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  
+ <script>
+ function validateform(){  
+		var name = document.myform.cardname.value;  
+		var number = document.myform.cardnumber.value;  
+		var year = document.myform.expyear.value;  
+		var month = document.myform.expmonth.value;  
+		var cvv = document.myform.cvv.value;  
+	  
+		if (name == "" || number == "" || year == "" || month == "" || cvv == "") {
+			alert("Please fill the feilds");  
+			return false; 
+		}
+}
  
+ function validatename() {
+	 var name = document.myform.cardname.value;
+	 if (name == null || name == ""){  
+ 		 alert("Please Enter Name.");  
+ 		 return false;  
+	} else if (!isNaN(name)) {
+		 alert("Name should not contain numbers.");
+		 return false;
+	
+	} else if (name.length<6) {
+		 alert("Name must be at least 6 characters long.");
+		 return false;
+	}
+ }
+ 
+ function validatenumber(){  
+		var number = document.myform.cardnumber.value;
+		if (number == "") {
+			alert("Please Enter Card Number.");
+			return false;
+		} else if (isNaN(number) || number.length != 16) {
+			 alert("Enter Valid Card Number.");  
+		     return false; 
+		}	
+}
+ function validateyear(){  
+		var number = document.myform.expyear.value;
+		if (number == "") {
+			alert("Please Enter Exp Year.");
+			return false;
+		} else if (isNaN(number) || number.length != 4 ) {
+			 alert("Enter Valid Exp Year.");  
+		     return false; 
+		}	
+}
+ 
+ function validatemonth(){  
+		var number = document.myform.expmonth.value;
+		if (number == "") {
+			alert("Please Enter Exp Month.");
+			return false;
+		} else if (isNaN(number) || (number.length != 1 && number.length != 2) || number > 12) {
+			 alert("Enter Valid Exp Month.");  
+		     return false; 
+		}	
+}
+ function validatecvv(){  
+		var number = document.myform.cvv.value;
+		if (number == "") {
+			alert("Please Enter Your CVV.");
+			return false;
+		} else if (isNaN(number) ||  number.length != 3 ) {
+			 alert("Enter Valid CVV.");  
+		     return false; 
+		}	
+}
+ 
+ </script>
  <style>
  
  .row {
@@ -99,7 +170,7 @@ span.price {
   margin-top : 2%;margin-right: 40%;">
   <div class="col-75">
     <div class="container" >
-      <form >
+      <form name="myform">
 
 
           <div class="col-50">
@@ -112,20 +183,20 @@ span.price {
               <i class="fa fa-cc-discover" style="color:orange;"></i>
             </div>
             <label for="cname">Name on Card</label>
-            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <input type="text" id="cname" name="cardname" onblur="return validatename()" placeholder="John More Doe">
             <label for="ccnum">Credit card number</label>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <input type="text" id="ccnum" name="cardnumber" onblur="return validatenumber()" placeholder="1111-2222-3333-4444">
             <label for="expmonth">Exp Month</label>
-            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <input type="text" id="expmonth" name="expmonth" onblur="return validatemonth()" placeholder="September">
 
             <div class="row">
               <div class="col-50">
                 <label for="expyear">Exp Year</label>
-                <input type="text" id="expyear" name="expyear" placeholder="2018">
+                <input type="text" id="expyear" name="expyear" onblur="return validateyear()" placeholder="2018">
               </div>
               <div class="col-50">
                 <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="352">
+                <input type="text" id="cvv" name="cvv" onblur="return validatecvv()" placeholder="352">
               </div>
             </div>
           </div>
@@ -134,7 +205,7 @@ span.price {
         <label>
           <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
         </label><br>
-        <a class="btn"  style="text-decoration:none" href="orderconfirmation.html" >Continue to checkout</a>
+        <a class="btn"  style="text-decoration:none" onclick="return validateform()" href="orderconfirmation.html" >Continue to checkout</a>
       </form>
     </div>
   </div>
