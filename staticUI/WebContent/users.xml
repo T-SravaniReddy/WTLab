@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<users>
+	<user id="1">
+		<username>Gouse</username>
+		<address>DSNR</address>
+		<phone>8801550101</phone>
+		<email>Gouse.sheikh@gmail.com</email>
+	</user>
+	
+	<user id="2">
+		<username>D Divakar</username>
+		<address>Ameerpet</address>
+		<phone>9888888888</phone>
+		<email>D Divakar@gmail.com</email>
+	</user>
+	
+	<user id="3">
+		<username>Rajinth</username>
+		<address>SR Nagar</address>
+		<phone>9866666666</phone>
+		<email>Rajinth@yahoo.com</email>
+	</user>
+	
+	<user id="4">
+		<username>Gouri</username>
+		<address>Suchitra</address>
+		<phone>8801340101</phone>
+		<email>Gourireddy@gmail.com</email>
+	</user>
+	
+	<user id="5">
+		<username>Sruthi</username>
+		<address>Delhi</address>
+		<phone>8234550101</phone>
+		<email>sruthi115@gmail.com</email>
+	</user>
+	
+	<user id="6">
+		<username>P Kalpana</username>
+		<address>KOTI</address>
+		<phone>968875554</phone>
+		<email>P Kalpana@yahoo.com</email>
+	</user>
+	
+	<user id="7">
+		<username>V Anitha</username>
+		<address>KPHB</address>
+		<phone>968888554</phone>
+		<email>V Anitha@yahoo.com</email>
+	</user>
+	
+	<user id="8">
+		<username>M Ramesh</username>
+		<address>IBP</address>
+		<phone>968878554</phone>
+		<email>M Ramesh@yahoo.com</email>
+	</user>
+	
+	<user id="9">
+		<username>Raswitha</username>
+		<address>DSNGR</address>
+		<phone>968899554</phone>
+		<email>Raswitha@yahoo.com</email>
+	</user>
+	
+	<user id="10">
+		<username>A Prasanna</username>
+		<address>KPHB</address>
+		<phone>9088008554</phone>
+		<email>A Prasanna@yahoo.com</email>
+	</user>
+    
+</users>
