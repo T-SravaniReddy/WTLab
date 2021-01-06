@@ -15,6 +15,6 @@
          echo 'The Number '. $input . ' is not prime';  
     }  else {  
        echo 'The Number '. $input . ' is prime';  
-       }   
+    }   
     }  
-    ?>  
+    ?>
